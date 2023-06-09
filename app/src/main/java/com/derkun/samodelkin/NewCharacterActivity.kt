@@ -20,14 +20,17 @@ class NewCharacterActivity : AppCompatActivity() {
         val strengthTextView = findViewById<TextView>(R.id.strengthTextView)
         val generateButton = findViewById<TextView>(R.id.generateButton)
 
-        characterData.run {
-            nameTextView.text = name
-            raceTextView.text = race
-            dexterityTextView.text = dex
-            wisdomTextView.text= wis
-            strengthTextView.text = str
+
+
+
+
+            characterData.run {
+                nameTextView.text = name
+                raceTextView.text = race
+                dexterityTextView.text = dex
+                wisdomTextView.text = wis
+                strengthTextView.text = str
+            }
         }
-
-
     }
-}
+
