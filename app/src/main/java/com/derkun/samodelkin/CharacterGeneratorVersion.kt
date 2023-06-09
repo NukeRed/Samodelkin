@@ -15,7 +15,7 @@ private val lastName = listOf("GreatLength", "Washsiss", "Goosmooz", "Trapfield"
 object CharacterGeneratorVersion {
     data class CharacterDataVersion(
         val name: String,
-        val race: List<String>,
+        val race: String,
         val dex: String,
         val wis: String,
         val str: String
@@ -23,11 +23,11 @@ object CharacterGeneratorVersion {
 
     private fun name() = "${firstName.rand()} ${lastName.rand()}"
 
-    private fun race() = listOf(
+    private fun race(): String = listOf(
         "dwarf", "elf", "human", "halfing", "ork", "troll", "demon", "seaman",
         "mutant", "elemental", "artificial creature", "creature", "nature", "demon", "undead",
         "chimera", "dream", "horror", "dead", "green", "red", "blue",
-    )
+    ).rand()
 
     private fun dex() = 4.roll()
 
