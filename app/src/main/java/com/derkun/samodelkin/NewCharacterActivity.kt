@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
+
 class NewCharacterActivity : AppCompatActivity() {
 
     private var characterData = CharacterGeneratorVersion.generate()
@@ -26,5 +27,7 @@ class NewCharacterActivity : AppCompatActivity() {
             wisdomTextView.text= wis
             strengthTextView.text = str
         }
+
+
     }
 }
